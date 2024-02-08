@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { allPosts, Post } from "contentlayer/generated";
 import { compareDesc } from "date-fns";
+import { Main, Section, Container } from "craft-ds";
 
 type PostCardProps = Post & {
   index: number;
@@ -27,24 +28,26 @@ export default function Home() {
   );
 
   return (
-    <section className="w-full mt-10">
-      <div>
-        <h2 className="mb-4">
-          welcome to{" "}
-          <span className="text-[#0029FE] dark:text-white">
-            pool house studio
-          </span>
-        </h2>
-        <p className="mb-24 text-base opacity-50">
-          pool house is a design and development studio creating useful software
-          and applications.
-        </p>
-      </div>
-      <div className="space-y-2">
-        {posts.map((post, idx) => (
-          <PostCard key={idx} index={idx} {...post} />
-        ))}
-      </div>
-    </section>
+    <Main>
+      <Section>
+        <div>
+          <h2 className="mb-4">
+            welcome to{" "}
+            <span className="text-[#0029FE] dark:text-white">
+              pool house studio
+            </span>
+          </h2>
+          <p className="mb-24 text-base opacity-50">
+            pool house is a design and development studio creating useful
+            software and applications.
+          </p>
+        </div>
+        <div className="space-y-2">
+          {posts.map((post, idx) => (
+            <PostCard key={idx} index={idx} {...post} />
+          ))}
+        </div>
+      </Section>
+    </Main>
   );
 }
