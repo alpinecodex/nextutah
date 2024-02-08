@@ -2,18 +2,14 @@ import type { Metadata } from "next";
 import { ThemeProvider } from "@/components/theme-provider";
 import Header from "@/components/header";
 import "./globals.css";
-import { Instrument_Serif } from "next/font/google";
-
-const font = Instrument_Serif({
-  subsets: ["latin"],
-  weight: "400",
-  display: "swap",
-});
+import { GeistMono } from "geist/font/mono";
+import Image from "next/image";
+import Timp from "@/public/timp.webp";
 
 export const metadata: Metadata = {
-  title: "pool house studio",
+  title: "Alpine.dev | Utah Developer Community",
   description:
-    "design and development studio by bridger tower and cameron youngblood. shipping soon!",
+    "Alpine.dev is a community of developers in Utah. We host events, workshops, and meetups to help developers grow and connect with others in the community. Join us today!",
 };
 
 export default function RootLayout({
@@ -25,14 +21,18 @@ export default function RootLayout({
     <html
       lang="en"
       suppressHydrationWarning
-      className={`${font.className} no-scrollbar`}
+      className={`${GeistMono.className} no-scrollbar`}
     >
-      <body className="font-sans min-h-screen dark:bg-[#0029FE] text-xl">
+      <body className="font-light min-h-screen text-xl">
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
           <Header />
           <main className="flex flex-col container">{children}</main>
-          <p className="hidden lowercase md:block fixed bottom-4 right-4 text-xs">
+          <p className="hidden z-20 lowercase md:block fixed bottom-4 right-4 text-xs">
             ©{" "}
+            <a className="hover:underline" href="https://alpinecodex.com">
+              alpine codex
+            </a>{" "}
+            \{" "}
             <a className="hover:underline" href="https://cameron.so">
               cameron youngblood
             </a>{" "}
@@ -42,6 +42,13 @@ export default function RootLayout({
             </a>
             , All rights reserved.
           </p>
+          <Image
+            src={Timp}
+            width={1920}
+            height={500}
+            alt="Timpanogos Mountain in Utah"
+            className="fixed bottom-0 right-0 z-10"
+          />
         </ThemeProvider>
       </body>
     </html>
