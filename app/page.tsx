@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { allPosts, Post } from "contentlayer/generated";
 import { compareDesc } from "date-fns";
-import { Main, Section, Container } from "craft-ds";
+import { Main, Section, Container } from "@/components/craft";
 
 type PostCardProps = Post & {
   index: number;

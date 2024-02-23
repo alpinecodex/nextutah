@@ -4,7 +4,7 @@ import "./globals.css";
 import { GeistMono } from "geist/font/mono";
 import Image from "next/image";
 import Timp from "@/public/timp.webp";
-import { Layout } from "craft-ds";
+import { Layout } from "@/components/craft";
 
 export const metadata: Metadata = {
   title: "Alpine.dev | Utah Developer Community",
@@ -29,6 +29,13 @@ export default function RootLayout({
         \{" "}
         <a className="hover:underline" href="https://cameron.so">
           cameron youngblood
+        </a>{" "}
+        \{" "}
+        <a
+          className="hover:underline"
+          href="https://twitter.com/mitchellbwright"
+        >
+          mitchell wright
         </a>{" "}
         \{" "}
         <a className="hover:underline" href="https://bridger.to">
