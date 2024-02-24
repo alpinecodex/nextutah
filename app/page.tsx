@@ -31,17 +31,21 @@ export default function Home() {
   return (
     <Main>
       <Section>
+        <Intro />
         <Container>
-          <h1 className="mb-4 font-sans">welcome to next utah</h1>
-          <h4>
-            next utah is a community of Next.js Developers located in the Utah.
-            We host events, workshops, and meetups to help developers grow and
-            connect with others in the community. Join us today!
-          </h4>
-          <p className="mb-24 text-base opacity-50">
-            pool house is a design and development studio creating useful
-            software and applications.
-          </p>
+          <p className="opacity-25 text-base">{"<div>"}</p>
+          <a className="flex flex-col gap-6 bg-accent not-prose border shadow-md rounded-lg cursor-pointer p-6 hover:ml-1 hover:border-foreground hover:-mr-1 transition-all">
+            <h2 className="text-xl mb-2">
+              <span className="opacity-60 mr-4">#</span>Event 00 -- March 14th @
+              6 PM MST
+            </h2>
+            <p>Location: </p>
+            <p>
+              Come to the {"<"}NextUtah{"/>"} kickoff event on March 14th at 6
+              PM. Food and drinks will be provided.{" "}
+            </p>
+          </a>
+          <p className="opacity-25 !mt-0 text-base">{"</div>"}</p>
         </Container>
         <Container className="not-prose my-12 space-y-2">
           {posts.map((post, idx) => (
@@ -52,3 +56,26 @@ export default function Home() {
     </Main>
   );
 }
+
+const Intro = () => {
+  return (
+    <Container>
+      <h1 className="mb-4">
+        {"<"}NextUtah{"/>"}
+      </h1>
+      <p className="opacity-25 text-base">{"<p>"}</p>
+      <h4 className="!mb-0">
+        <Balancer>
+          {"<"}NextUtah{"/>"} is a community of Next.js Developers located in
+          the Utah.{" "}
+          <span className="opacity-50">
+            We host events, workshops, and meetups to help developers grow and
+            connect with others in the community.
+          </span>{" "}
+          <a href="">Join us today!</a>
+        </Balancer>
+      </h4>
+      <p className="opacity-25 !mt-0 text-base">{"<p>"}</p>
+    </Container>
+  );
+};
