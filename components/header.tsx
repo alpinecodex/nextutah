@@ -14,8 +14,8 @@ export default function Header() {
             <Image
               width={25}
               height={25}
-              src="/favicon.svg"
-              alt="pool house"
+              src="/logo.svg"
+              alt="next utah logo"
             ></Image>
           </Link>
           <div className="flex items-center justify-center gap-4 md:gap-2">
