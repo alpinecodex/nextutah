@@ -68,7 +68,7 @@ const Mountain = () => {
       width={1920}
       height={500}
       alt="Timpanogos Mountain in Utah"
-      className="fixed grayscale bottom-0 right-0 left-0 lg:left-8 z-10 lg:-mb-20"
+      className="fixed grayscale bottom-0 m-auto right-0 left-0 lg:left-8 z-10 lg:-mb-20"
     />
   );
 };
