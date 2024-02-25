@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import { allPosts } from "contentlayer/generated";
 import { GeistSans } from "geist/font/sans";
 import { Separator } from "@/components/ui/separator";
+import { Section, Container } from "@/components/craft";
 
 import { Metadata } from "next";
 import { Mdx } from "@/components/mdx-components";
@@ -41,19 +42,16 @@ export default async function PostPage({ params }: PostProps) {
 
   return (
     <>
-      <section className="lg:container flex justify-center">
-        <article
-          className={`${GeistSans.className} not-italic py-6 prose dark:prose-invert font-light prose-headings:font-normal`}
-        >
-          <h1
-            className={`${font.className} not-prose text-2xl dark:font-white mb-2`}
+      <Section>
+        <Container>
+          <article
+            className={`${GeistSans.className} not-italic py-6 prose dark:prose-invert font-light prose-headings:font-normal`}
           >
-            <span className="opacity-50 text-lg">#</span> {post.title}
-          </h1>
-          <Separator className="my-4 dark:bg-white" />
-          <Mdx code={post.body.code} />
-        </article>
-      </section>
+            <h1>{post.title}</h1>
+            <Mdx code={post.body.code} />
+          </article>
+        </Container>
+      </Section>
     </>
   );
 }
