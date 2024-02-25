@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Button } from "./ui/button";
 import { ModeToggle } from "./theme-toggle";
 import Image from "next/image";
 import { Github } from "lucide-react";
@@ -19,6 +20,9 @@ export default function Header() {
             ></Image>
           </Link>
           <div className="flex items-center justify-center gap-4 md:gap-2">
+            <Button asChild variant="outline">
+              <a href="https://tally.so/r/w51OKQ">Join now</a>
+            </Button>
             <ModeToggle />
           </div>
         </Container>
