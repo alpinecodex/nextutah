@@ -33,7 +33,6 @@ export default function Home() {
       <Section>
         <Intro />
         <Container>
-          <p className="opacity-25 text-base">{"<div>"}</p>
           <a className="flex flex-col gap-6 bg-accent not-prose border shadow-md rounded-lg cursor-pointer p-6 hover:ml-1 hover:border-foreground hover:-mr-1 transition-all">
             <h2 className="text-xl mb-2">
               <span className="opacity-60 mr-4">#</span>Event 00 -- March 14th @
@@ -45,7 +44,6 @@ export default function Home() {
               PM. Food and drinks will be provided.{" "}
             </p>
           </a>
-          <p className="opacity-25 !mt-0 text-base">{"</div>"}</p>
         </Container>
         <Container className="not-prose my-12 space-y-2">
           {posts.map((post, idx) => (
@@ -63,7 +61,6 @@ const Intro = () => {
       <h1 className="mb-4">
         {"<"}NextUtah{"/>"}
       </h1>
-      <p className="opacity-25 text-base">{"<p>"}</p>
       <h4 className="!mb-0">
         <Balancer>
           {"<"}NextUtah{"/>"} is a community of Next.js Developers located in
@@ -75,7 +72,6 @@ const Intro = () => {
           <a href="">Join us today!</a>
         </Balancer>
       </h4>
-      <p className="opacity-25 !mt-0 text-base">{"<p>"}</p>
     </Container>
   );
 };
