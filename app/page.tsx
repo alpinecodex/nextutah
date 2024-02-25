@@ -3,6 +3,7 @@ import { allPosts, Post } from "contentlayer/generated";
 import { compareDesc } from "date-fns";
 import { Main, Section, Container } from "@/components/craft";
 import Balancer from "react-wrap-balancer";
+import { Button } from "@/components/ui/button";
 
 type PostCardProps = Post & {
   index: number;
@@ -33,17 +34,33 @@ export default function Home() {
       <Section>
         <Intro />
         <Container>
-          <a className="flex flex-col gap-6 bg-accent not-prose border shadow-md rounded-lg cursor-pointer p-6 hover:ml-1 hover:border-foreground hover:-mr-1 transition-all">
-            <h2 className="text-xl mb-2">
+          <h3>Our Next Event --{">"}</h3>
+          <div className="flex max-w-3xl flex-col gap-2 bg-accent not-prose border shadow-md rounded p-6 border-foreground">
+            <h4 className="text-xl mb-2 text-orange-500">
               <span className="opacity-60 mr-4">#</span>Event 00 -- March 14th @
               6 PM MST
-            </h2>
-            <p>Location: </p>
+            </h4>
             <p>
-              Come to the {"<"}NextUtah{"/>"} kickoff event on March 14th at 6
-              PM. Food and drinks will be provided.{" "}
+              {"> "}Location:{" "}
+              <a
+                className="underline underline-offset-4"
+                href="https://maps.app.goo.gl/WKM2vhggQKwh4B1f9"
+              >
+                519 W State St #201, Pleasant Grove, UT 84062
+              </a>
             </p>
-          </a>
+            <p className="opacity-60">
+              Come to the {"<"}NextUtah{"/>"} kickoff event on March 14th at 6
+              PM. Food and drinks will be provided. Learn about the App Router,
+              using AI with NextJS, shadcn/ui, and more!{" "}
+            </p>
+            <Button asChild>
+              <Link href="/">Speakers and </Link>
+            </Button>
+            <Button asChild>
+              <Link href="/">RSVP for Free!</Link>
+            </Button>
+          </div>
         </Container>
         <Container className="not-prose my-12 space-y-2">
           {posts.map((post, idx) => (
