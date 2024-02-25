@@ -15,7 +15,7 @@ export default function Home() {
   );
 
   return (
-    <Main>
+    <Main className="pb-36">
       <Section>
         <Intro />
         <NextEvent />
@@ -55,9 +55,9 @@ const NextEvent = () => {
   return (
     <Container>
       <h3 className="sr-only">Our Next Event --{">"}</h3>
-      <div className="flex max-w-3xl flex-col gap-2 not-prose border shadow-md rounded p-6 border-foreground">
+      <div className="flex max-w-3xl mt-8 md:mt-0 flex-col gap-2 not-prose border shadow-md rounded p-6 border-foreground">
         <h4 className="text-xl mb-2 text-orange-500">
-          <span className="opacity-60 mr-4">#</span>
+          <span className="opacity-60 mr-2 hidden md:inline">#</span>
           {"<"}NextUtah{"/>"} KickOff -- March 14th @ 6 PM MST
         </h4>
         <p>
@@ -92,7 +92,7 @@ function PostCard({ index, ...post }: PostCardProps) {
   return (
     <Link
       href={post.url}
-      className="flex lowercase text-xl md:text-base max-w-[500px] hover:border-b-accent border-b dark:border-b-accent dark:hover:border-b-white justify-between mr-2 gap-2"
+      className="flex lowercase text-sm md:text-xl max-w-[500px] hover:border-b-accent border-b dark:border-b-accent dark:hover:border-b-white justify-between mr-2 gap-2"
     >
       <h2>
         <span className="text-base opacity-50">#</span> {post.title}
