@@ -129,6 +129,7 @@ const Sponsors = () => {
             className="flex items-center justify-start hover:opacity-75 transition-opacity"
           >
             <Image
+              className="h-12"
               width={96}
               height={96}
               src={sponsor.logo}
