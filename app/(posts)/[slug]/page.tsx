@@ -34,7 +34,7 @@ export default async function PostPage({ params }: PostProps) {
       <Section>
         <Container>
           <article
-            className={`${GeistSans.className} not-italic py-6 prose dark:prose-invert font-light prose-headings:font-normal`}
+            className={`not-italic py-6 prose dark:prose-invert font-light prose-headings:font-normal`}
           >
             <h1>{post.title}</h1>
             <Mdx code={post.body.code} />
