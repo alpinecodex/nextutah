@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 import { allPosts } from "contentlayer/generated";
-import { Section, Container } from "@/components/craft";
+import { Section, Container, Article } from "@/components/craft";
 import { Mdx } from "@/components/mdx-components";
 
 interface PostProps {
@@ -29,8 +29,8 @@ export default async function PostPage({ params }: PostProps) {
   }
 
   return (
-    <>
-      <Section className="pb-48">
+    <div className="pb-36">
+      <Section>
         <Container>
           <article
             className={`not-italic py-6 prose dark:prose-invert font-light prose-headings:font-normal`}
@@ -40,6 +40,6 @@ export default async function PostPage({ params }: PostProps) {
           </article>
         </Container>
       </Section>
-    </>
+    </div>
   );
 }

@@ -1,13 +1,42 @@
 import Link from "next/link";
+import Image from "next/image";
 import { allPosts, Post } from "contentlayer/generated";
 import { compareDesc } from "date-fns";
 import { Main, Section, Container } from "@/components/craft";
 import Balancer from "react-wrap-balancer";
 import { Button } from "@/components/ui/button";
 
+// Logos
+import ampry from "@/public/ampry.svg";
+import alpine from "@/public/alpine.svg";
+
 type PostCardProps = Post & {
   index: number;
 };
+
+type Sponsor = {
+  name: string;
+  url: string;
+  logo: string;
+};
+
+const sponsors: Sponsor[] = [
+  // {
+  //   name: "Vercel",
+  //   url: "https://www.vercel.com",
+  //   logo: "https://res.cloudinary.com/nextutah/image/upload/v1635517041/nextutah/vercel-logo.png",
+  // },
+  {
+    name: "Ampry",
+    url: "https://ampry.com",
+    logo: ampry,
+  },
+  {
+    name: "Alpine Codex",
+    url: "https://alpinecodex.com",
+    logo: alpine,
+  },
+];
 
 export default function Home() {
   const posts = allPosts.sort((a, b) =>
@@ -25,6 +54,7 @@ export default function Home() {
             <PostCard key={idx} index={idx} {...post} />
           ))}
         </Container>
+        <Sponsors />
       </Section>
     </Main>
   );
@@ -83,6 +113,39 @@ const NextEvent = () => {
           </Button>
         </div>
       </div>
+    </Container>
+  );
+};
+
+const Sponsors = () => {
+  return (
+    <Container className="not-prose">
+      <h3 className="text-xl mb-8">Thank you to our Sponsors</h3>
+      <div className="flex gap-8">
+        {sponsors.map((sponsor) => (
+          <a
+            key={sponsor.name}
+            href={sponsor.url}
+            className="flex items-center justify-start hover:opacity-75 transition-opacity"
+          >
+            <Image
+              width={96}
+              height={96}
+              src={sponsor.logo}
+              alt={sponsor.name}
+            />
+          </a>
+        ))}
+      </div>
+      <p className="mt-6 text-sm opacity-75">
+        Interested in becoming a sponsor? Email{" "}
+        <a
+          className="underline underline-offset-4"
+          href="mailto:nextjsutah@gmail.com"
+        >
+          nextjsutah@gmail.com
+        </a>
+      </p>
     </Container>
   );
 };
