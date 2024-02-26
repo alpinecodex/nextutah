@@ -76,10 +76,10 @@ const NextEvent = () => {
         </p>
         <div className="grid md:grid-cols-2 gap-2">
           <Button asChild>
-            <Link href="https://tally.so/r/w51OKQ">RSVP for Free!</Link>
+            <Link href="https://tally.so/r/w51OKQ">RSVP!</Link>
           </Button>
           <Button variant="secondary" asChild>
-            <Link href="/kickoff">Speakers and Presentations</Link>
+            <Link href="/kickoff">More info</Link>
           </Button>
         </div>
       </div>
