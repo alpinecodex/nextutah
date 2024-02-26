@@ -66,7 +66,7 @@ const Intro = () => {
       <h1 className="mb-4">
         {"<"}NextUtah{"/>"}
       </h1>
-      <h4 className="!mb-0">
+      <h3 className="!mb-0 !text-lg">
         <Balancer>
           {"<"}NextUtah{"/>"} is a community of Next.js Developers located in
           Utah.{" "}
@@ -76,7 +76,7 @@ const Intro = () => {
           </span>{" "}
           <a href="https://tally.so/r/w51OKQ">Join us today!</a>
         </Balancer>
-      </h4>
+      </h3>
     </Container>
   );
 };

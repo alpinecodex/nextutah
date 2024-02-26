@@ -32,10 +32,10 @@ export default function RootLayout({
           <Header />
           {children}
         </ThemeProvider>
+        <Analytics />
+        <Copyright />
+        <Mountain />
       </body>
-      <Copyright />
-      <Mountain />
-      <Analytics />
     </Layout>
   );
 }
