@@ -44,7 +44,7 @@ export default function Home() {
   );
 
   return (
-    <Main className="pb-36">
+    <Main className="pb-36 md:pb-48">
       <Section>
         <Intro />
         <NextEvent />

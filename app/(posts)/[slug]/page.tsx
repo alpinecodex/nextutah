@@ -29,7 +29,7 @@ export default async function PostPage({ params }: PostProps) {
   }
 
   return (
-    <div className="pb-36">
+    <div className="pb-36 md:pb-48">
       <Section>
         <Container>
           <article
