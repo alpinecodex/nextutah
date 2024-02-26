@@ -1,6 +1,5 @@
 import { notFound } from "next/navigation";
 import { allPosts } from "contentlayer/generated";
-import { GeistSans } from "geist/font/sans";
 import { Section, Container } from "@/components/craft";
 import { Mdx } from "@/components/mdx-components";
 
