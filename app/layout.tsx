@@ -6,6 +6,7 @@ import Image from "next/image";
 import Timp from "@/public/timp.webp";
 import { Layout } from "@/components/craft";
 import { ThemeProvider } from "@/components/theme-provider";
+import { Analytics } from "@vercel/analytics/react";
 
 export const metadata: Metadata = {
   title: "<NextUtah/> | Utah Next.js Developer Community",
@@ -34,6 +35,7 @@ export default function RootLayout({
       </body>
       <Copyright />
       <Mountain />
+      <Analytics />
     </Layout>
   );
 }
