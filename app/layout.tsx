@@ -8,9 +8,10 @@ import { Layout } from "@/components/craft";
 import { ThemeProvider } from "@/components/theme-provider";
 
 export const metadata: Metadata = {
-  title: "Alpine.dev | Utah Developer Community",
+  title: "<NextUtah/> | Utah Next.js Developer Community",
   description:
-    "Alpine.dev is a community of developers in Utah. We host events, workshops, and meetups to help developers grow and connect with others in the community. Join us today!",
+    "<NextUtah/> is a community of developers in Utah. We host events, workshops, and meetups to help developers grow and connect with others in the community. Join us today!",
+  metadataBase: new URL("https://nextutah.org"),
 };
 
 export default function RootLayout({

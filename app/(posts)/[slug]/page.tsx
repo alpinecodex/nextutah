@@ -1,19 +1,8 @@
 import { notFound } from "next/navigation";
 import { allPosts } from "contentlayer/generated";
 import { GeistSans } from "geist/font/sans";
-import { Separator } from "@/components/ui/separator";
 import { Section, Container } from "@/components/craft";
-
-import { Metadata } from "next";
 import { Mdx } from "@/components/mdx-components";
-
-import { Instrument_Serif } from "next/font/google";
-
-const font = Instrument_Serif({
-  subsets: ["latin"],
-  weight: "400",
-  display: "swap",
-});
 
 interface PostProps {
   params: {
