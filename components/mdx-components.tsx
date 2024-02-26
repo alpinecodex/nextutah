@@ -15,7 +15,7 @@ const components = {
     const { asChild, children, href, ...rest } = props;
     if (asChild) {
       return (
-        <Button className="not-prose">
+        <Button className="not-prose mt-8">
           <Link href={href}>{children}</Link>
         </Button>
       );
