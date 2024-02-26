@@ -99,7 +99,7 @@ const NextEvent = () => {
             519 W State St #201, Pleasant Grove, UT 84062
           </a>
         </p>
-        <p className="opacity-60">
+        <p className="opacity-60 my-6">
           Come to the {"<"}NextUtah{"/>"} kickoff event on March 21st at 6 PM.
           Light snack and drinks will be provided. Learn about the App Router,
           using AI with NextJS, shadcn/ui, and more!{" "}
