@@ -79,7 +79,7 @@ const NextEvent = () => {
             <Link href="https://tally.so/r/w51OKQ">RSVP!</Link>
           </Button>
           <Button variant="secondary" asChild>
-            <Link href="/kickoff">More info</Link>
+            <Link href="/kickoff">Event info</Link>
           </Button>
         </div>
       </div>
