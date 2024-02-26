@@ -30,7 +30,7 @@ export default async function PostPage({ params }: PostProps) {
 
   return (
     <>
-      <Section>
+      <Section className="pb-48">
         <Container>
           <article
             className={`not-italic py-6 prose dark:prose-invert font-light prose-headings:font-normal`}

@@ -58,7 +58,7 @@ const NextEvent = () => {
       <div className="flex max-w-3xl mt-8 md:mt-0 flex-col gap-2 not-prose border shadow-md rounded p-6 border-foreground">
         <h4 className="text-xl mb-2 text-orange-500">
           <span className="opacity-60 mr-2 hidden md:inline">#</span>
-          {"<"}NextUtah{"/>"} KickOff -- March 14th @ 6 PM MST
+          {"<"}NextUtah{"/>"} KickOff -- March 21st @ 6 PM MST
         </h4>
         <p>
           {"> "}Location:{" "}
@@ -70,9 +70,9 @@ const NextEvent = () => {
           </a>
         </p>
         <p className="opacity-60">
-          Come to the {"<"}NextUtah{"/>"} kickoff event on March 14th at 6 PM.
-          Food and drinks will be provided. Learn about the App Router, using AI
-          with NextJS, shadcn/ui, and more!{" "}
+          Come to the {"<"}NextUtah{"/>"} kickoff event on March 21st at 6 PM.
+          Light snack and drinks will be provided. Learn about the App Router,
+          using AI with NextJS, shadcn/ui, and more!{" "}
         </p>
         <div className="grid md:grid-cols-2 gap-2">
           <Button asChild>

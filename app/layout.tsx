@@ -46,7 +46,7 @@ const Copyright = () => {
         alpine codex
       </a>{" "}
       \{" "}
-      <a className="hover:underline" href="https://cameron.so">
+      <a className="hover:underline" href="https://twitter.com/youngbloodcyb">
         cameron youngblood
       </a>{" "}
       \{" "}
