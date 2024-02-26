@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Button } from "./ui/button";
-import { ModeToggle } from "./theme-toggle";
+// import { ModeToggle } from "./theme-toggle";
 import Image from "next/image";
 import { Github } from "lucide-react";
 import { Section, Container } from "./craft";
@@ -23,7 +23,7 @@ export default function Header() {
             <Button asChild variant="outline">
               <a href="https://tally.so/r/w51OKQ">Join now</a>
             </Button>
-            <ModeToggle />
+            {/* <ModeToggle /> */}
           </div>
         </Container>
       </Section>

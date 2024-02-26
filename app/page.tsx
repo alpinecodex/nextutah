@@ -39,7 +39,7 @@ const Intro = () => {
       <h4 className="!mb-0">
         <Balancer>
           {"<"}NextUtah{"/>"} is a community of Next.js Developers located in
-          the Utah.{" "}
+          Utah.{" "}
           <span className="opacity-50">
             We host events, workshops, and meetups to help developers grow and
             connect with others in the community.
