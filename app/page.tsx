@@ -9,6 +9,7 @@ import { Button } from "@/components/ui/button";
 // Logos
 import ampry from "@/public/ampry.svg";
 import alpine from "@/public/alpine.svg";
+import vercel from "@/public/vercel-light.svg";
 
 type PostCardProps = Post & {
   index: number;
@@ -24,7 +25,7 @@ const sponsors: Sponsor[] = [
   {
     name: "Vercel",
     url: "https://www.vercel.com",
-    logo: "https://res.cloudinary.com/nextutah/image/upload/v1635517041/nextutah/vercel-logo.png",
+    logo: vercel,
   },
   {
     name: "Ampry",
