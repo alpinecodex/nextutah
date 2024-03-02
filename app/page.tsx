@@ -21,11 +21,11 @@ type Sponsor = {
 };
 
 const sponsors: Sponsor[] = [
-  // {
-  //   name: "Vercel",
-  //   url: "https://www.vercel.com",
-  //   logo: "https://res.cloudinary.com/nextutah/image/upload/v1635517041/nextutah/vercel-logo.png",
-  // },
+  {
+    name: "Vercel",
+    url: "https://www.vercel.com",
+    logo: "https://res.cloudinary.com/nextutah/image/upload/v1635517041/nextutah/vercel-logo.png",
+  },
   {
     name: "Ampry",
     url: "https://ampry.com",
